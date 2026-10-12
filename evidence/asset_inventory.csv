@@ -1,0 +1,4 @@
+host,asset_type,description
+hv-earth-01,hypervisor,EarthCentinell simulated virtualization host
+EC-WEB-01,virtual_machine,EarthCentinell training web server
+EC-DB-01,virtual_machine,EarthCentinell training database server
