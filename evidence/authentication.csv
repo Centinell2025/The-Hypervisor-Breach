@@ -1,0 +1,7 @@
+timestamp_utc,host,username,source_ip,event,result
+2026-09-17T08:40:12Z,hv-earth-01,admin.ops,192.0.2.10,login,success
+2026-09-17T09:01:15Z,hv-earth-01,backup.svc,192.0.2.20,login,success
+2026-09-17T09:14:02Z,hv-earth-01,unknown,198.51.100.77,login,failure
+2026-09-17T09:14:19Z,hv-earth-01,admin.ops,198.51.100.77,login,failure
+2026-09-17T09:15:03Z,hv-earth-01,admin.ops,198.51.100.77,login,success
+2026-09-17T09:21:47Z,hv-earth-01,admin.ops,198.51.100.77,logout,success
