@@ -1,0 +1,6 @@
+timestamp_utc,host,username,source_ip,vm_id,action,result
+2026-09-17T08:45:00Z,hv-earth-01,admin.ops,192.0.2.10,EC-WEB-01,view_status,success
+2026-09-17T09:03:00Z,hv-earth-01,backup.svc,192.0.2.20,EC-DB-01,backup_check,success
+2026-09-17T09:16:24Z,hv-earth-01,admin.ops,198.51.100.77,EC-WEB-01,create_snapshot,success
+2026-09-17T09:18:11Z,hv-earth-01,admin.ops,198.51.100.77,EC-WEB-01,export_snapshot,success
+2026-09-17T09:25:00Z,hv-earth-01,admin.ops,192.0.2.10,EC-WEB-01,view_status,success
