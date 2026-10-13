@@ -16,15 +16,24 @@ A fictional infrastructure team detects a suspicious login on its virtualization
 ## Start here
 
 1. Read [PLAYER-INSTRUCTIONS.md](PLAYER-INSTRUCTIONS.md).
-2. Open [evidence/authentication.csv](evidence/authentication.csv), [evidence/vm_activity.csv](evidence/vm_activity.csv), and [evidence/asset_inventory.csv](evidence/asset_inventory.csv).
-3. Solve the eight questions in [QUESTIONS.md](QUESTIONS.md). All timestamps are UTC.
+2. Use the original [authentication](evidence/authentication.csv), [VM activity](evidence/vm_activity.csv) and [asset inventory](evidence/asset_inventory.csv) together with [API activity](evidence/hypervisor_api_audit.csv), [ticket state](evidence/change_tickets.csv), [snapshot lifecycle](evidence/snapshot_lifecycle.csv) and [network ACL](evidence/management_network_acl.csv).
+3. Solve the **original eight questions plus eight correlation questions** in [QUESTIONS.md](QUESTIONS.md). See [forensic limitations](docs/FORENSIC_SCOPE.md). All timestamps are UTC.
 
 No hypervisor, virtual machine, network access or offensive tooling is required. The private instructor writeup is not published here.
 
-## Packaging for HTB
+## Verified student ZIP
 
-The player ZIP is prepared separately with password `hackthebox`. The ZIP must be hosted at a downloadable URL before completing the HTB submission form. Instructor solutions must be shared privately with HTB, not committed to this public repository.
+The student ZIP is generated and tested in [GitHub Actions](https://github.com/Centinell2025/The-Hypervisor-Breach/actions/workflows/validate.yml). After a successful run, download the `hypervisor-breach-student` artifact and extract `The-Hypervisor-Breach-STUDENT.zip`. It includes all eight CSV sources, the SHA-256 inventory, the 16 questions and onboarding documents.
+
+Local QA (Python standard library only):
+
+```bash
+python3 tools/build_student_zip.py
+python3 -m unittest discover -s tests -v
+```
+
+The student ZIP is **not password encrypted**; no encryption capability or reviewer password is claimed. Instructor answers must be delivered privately to HTB only after independent verification. GitHub Actions success does not establish accepted difficulty or payment.
 
 ## Scope
 
-This is an entry-level log-correlation exercise, not an advanced hypervisor exploitation lab. The scenario is fictional and designed solely for defensive education.
+This is an entry-level log-correlation exercise, not an advanced hypervisor exploitation lab. No actual snapshot export image or authenticated production hypervisor telemetry is included. The added sources are simulated and explicitly marked unverified. The scenario is fictional and designed solely for defensive education.
