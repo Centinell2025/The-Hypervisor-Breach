@@ -1,0 +1,7 @@
+timestamp_utc,host,event_id,session_id,username,source_ip,vm_id,operation,result,datastore,source
+2026-09-17T08:45:01Z,hv-earth-01,API-101,HVS-120,admin.ops,192.0.2.10,EC-WEB-01,view_status,success,ds-training-01,synthetic-control-plane-export
+2026-09-17T09:03:02Z,hv-earth-01,API-102,HVS-224,backup.svc,192.0.2.20,EC-DB-01,backup_check,success,ds-training-01,synthetic-control-plane-export
+2026-09-17T09:16:24Z,hv-earth-01,API-301,HVS-773,admin.ops,198.51.100.77,EC-WEB-01,create_snapshot,success,ds-research-01,synthetic-control-plane-export
+2026-09-17T09:18:11Z,hv-earth-01,API-302,HVS-773,admin.ops,198.51.100.77,EC-WEB-01,export_snapshot,success,ds-research-01,synthetic-control-plane-export
+2026-09-17T09:19:29Z,hv-earth-01,API-303,HVS-773,admin.ops,198.51.100.77,EC-WEB-01,task_list,success,ds-research-01,synthetic-control-plane-export
+2026-09-17T09:25:01Z,hv-earth-01,API-304,HVS-120,admin.ops,192.0.2.10,EC-WEB-01,view_status,success,ds-training-01,synthetic-control-plane-export
