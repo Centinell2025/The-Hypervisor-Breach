@@ -1,0 +1,27 @@
+name: Validate Hypervisor Very Easy Sherlock
+on:
+  push:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Syntax check
+        run: python3 -m compileall -q tools tests
+      - name: Verify hypervisor evidence and build student ZIP
+        run: python3 tools/build_student_zip.py
+      - name: Run forensic source and archive regression checks
+        run: python3 -m unittest discover -s tests -v
+      - name: Publish student-only archive
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hypervisor-breach-student
+          path: dist/The-Hypervisor-Breach-STUDENT.zip
+          if-no-files-found: error
