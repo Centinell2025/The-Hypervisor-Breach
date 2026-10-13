@@ -1,0 +1,8 @@
+artifact,source_host,collection_method,original_system_authenticated,completeness,notes
+asset_inventory.csv,hv-earth-01,synthetic-asset-ledger,no,selected,simulated-assets
+authentication.csv,hv-earth-01,synthetic-login-export,no,selected,does-not-verify-real-human
+vm_activity.csv,hv-earth-01,synthetic-control-plane-export,no,selected,original-action-summary
+hypervisor_api_audit.csv,hv-earth-01,synthetic-api-export,no,selected,modelled-independent-collector-not-authenticated
+change_tickets.csv,hv-earth-01,synthetic-ticket-ledger,no,selected,auth-state-claim-not-execution-proof
+snapshot_lifecycle.csv,hv-earth-01,synthetic-snapshot-log,no,selected,no-snapshot-image-acquired
+management_network_acl.csv,hv-earth-01,synthetic-network-decision,no,selected,does-not-prove-remote-content
