@@ -1,0 +1,4 @@
+ticket_id,requester,host,vm_id,requested_action,status,valid_from_utc,valid_to_utc,source
+CHG-323,backup.svc,hv-earth-01,EC-DB-01,backup_check,approved,2026-09-17T09:00:00Z,2026-09-17T10:00:00Z,synthetic-ticket-ledger
+CHG-324,admin.ops,hv-earth-01,EC-WEB-01,export_snapshot,pending,2026-09-17T09:00:00Z,2026-09-17T10:00:00Z,synthetic-ticket-ledger
+CHG-325,admin.ops,hv-earth-01,EC-WEB-01,view_status,approved,2026-09-17T08:00:00Z,2026-09-17T09:00:00Z,synthetic-ticket-ledger
