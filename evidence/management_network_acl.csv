@@ -1,0 +1,5 @@
+timestamp_utc,source_host,source_ip,destination_host,protocol,destination_port,decision,session_id,scope
+2026-09-17T08:40:12Z,admin-workstation,192.0.2.10,hv-earth-01,TCP,443,allow,HVS-120,simulated-firewall-decision
+2026-09-17T09:01:15Z,backup-operator,192.0.2.20,hv-earth-01,TCP,443,allow,HVS-224,simulated-firewall-decision
+2026-09-17T09:15:03Z,unknown-training-client,198.51.100.77,hv-earth-01,TCP,443,allow,HVS-773,simulated-firewall-decision
+2026-09-17T09:21:48Z,unknown-training-client,198.51.100.77,hv-earth-01,TCP,22,deny,HVS-773,simulated-firewall-decision
