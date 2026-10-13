@@ -1,0 +1,5 @@
+timestamp_utc,host,event_id,vm_id,snapshot_id,action,session_id,claim,verified_artifact
+2026-09-17T09:03:21Z,hv-earth-01,SNAP-101,EC-DB-01,SNP-BASE-01,backup_check,HVS-224,completed,no
+2026-09-17T09:16:24Z,hv-earth-01,SNAP-201,EC-WEB-01,SNP-778,create_snapshot,HVS-773,completed,no
+2026-09-17T09:18:11Z,hv-earth-01,SNAP-202,EC-WEB-01,SNP-778,export_snapshot,HVS-773,completed,no
+2026-09-17T09:19:32Z,hv-earth-01,SNAP-203,EC-WEB-01,SNP-778,export_record,HVS-773,claimed-only,no
